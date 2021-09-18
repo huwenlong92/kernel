@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the overtrue/wechat.
- *
- * (c) overtrue <i@overtrue.me>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
 
 namespace Larkit\Kernel;
 
@@ -23,12 +15,11 @@ use Pimple\Container;
 /**
  * Class ServiceContainer.
  *
- * @author overtrue <i@overtrue.me>
  *
- * @property \Larkit\Kernel\Config                              $config
- * @property \Symfony\Component\HttpFoundation\Request          $request
- * @property \GuzzleHttp\Client                                 $http_client
- * @property \Monolog\Logger                                    $logger
+ * @property \Larkit\Kernel\Config $config
+ * @property \Symfony\Component\HttpFoundation\Request $request
+ * @property \GuzzleHttp\Client $http_client
+ * @property \Monolog\Logger $logger
  * @property \Symfony\Component\EventDispatcher\EventDispatcher $events
  */
 class ServiceContainer extends Container
@@ -116,7 +107,7 @@ class ServiceContainer extends Container
 
     /**
      * @param string $id
-     * @param mixed  $value
+     * @param mixed $value
      */
     public function rebind($id, $value)
     {
@@ -144,7 +135,7 @@ class ServiceContainer extends Container
      * Magic set access.
      *
      * @param string $id
-     * @param mixed  $value
+     * @param mixed $value
      */
     public function __set($id, $value)
     {

@@ -10,7 +10,6 @@ use IteratorAggregate;
 /**
  * Class ArrayAccessible.
  *
- * @author overtrue <i@overtrue.me>
  */
 class ArrayAccessible implements ArrayAccess, IteratorAggregate, Arrayable
 {

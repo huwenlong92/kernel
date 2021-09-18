@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of the overtrue/wechat.
- *
- * (c) overtrue <i@overtrue.me>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
-
 namespace Larkit\Kernel\Providers;
 
 use Larkit\Kernel\Config;
@@ -18,7 +9,6 @@ use Pimple\ServiceProviderInterface;
 /**
  * Class ConfigServiceProvider.
  *
- * @author overtrue <i@overtrue.me>
  */
 class ConfigServiceProvider implements ServiceProviderInterface
 {

@@ -1,20 +1,10 @@
 <?php
 
-/*
- * This file is part of the overtrue/wechat.
- *
- * (c) overtrue <i@overtrue.me>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
 
 namespace Larkit\Kernel\Clauses;
 
 /**
  * Class Clause.
- *
- * @author mingyoung <mingyoungcheung@gmail.com>
  */
 class Clause
 {
@@ -44,7 +34,7 @@ class Clause
      */
     public function intercepted($payload)
     {
-        return (bool) $this->interceptWhereClause($payload);
+        return (bool)$this->interceptWhereClause($payload);
     }
 
     /**

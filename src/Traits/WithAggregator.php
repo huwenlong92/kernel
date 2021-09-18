@@ -4,6 +4,8 @@
 namespace Larkit\Kernel\Traits;
 
 use Larkit\Kernel\BaseClient;
+use Larkit\Kernel\Delegation\DelegationTo;
+use Larkit\Kernel\LarkitConfig;
 
 trait WithAggregator
 {
@@ -12,7 +14,7 @@ trait WithAggregator
      */
     protected function aggregate()
     {
-        foreach (EasyWeChat::config() as $key => $value) {
+        foreach (LarkitConfig::config() as $key => $value) {
             $this['config']->set($key, $value);
         }
     }
@@ -37,9 +39,8 @@ trait WithAggregator
     }
 
     /**
-     * @param string $id
-     *
-     * @return \EasyWeChatComposer\Delegation
+     * @param $id
+     * @return DelegationTo
      */
     public function delegateTo($id)
     {
