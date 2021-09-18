@@ -1,0 +1,31 @@
+{
+  "name": "larkit/kernel",
+  "description": "base container",
+  "type": "library",
+  "authors": [
+    {
+      "name": "子欣科技",
+      "email": "zixinit@163.com"
+    }
+  ],
+  "require": {
+    "ext-fileinfo": "*",
+    "ext-openssl": "*",
+    "ext-simplexml": "*",
+    "guzzlehttp/guzzle": "^6.2 || ^7.0",
+    "monolog/monolog": "^1.22 || ^2.0",
+    "pimple/pimple": "^3.4",
+    "ext-mbstring": "*",
+    "psr/simple-cache": "^1.0",
+    "symfony/cache": "^3.3 || ^4.3 || ^5.0",
+    "symfony/event-dispatcher": "^4.3 || ^5.0",
+    "symfony/http-foundation": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+    "symfony/psr-http-message-bridge": "^0.3 || ^1.0 || ^2.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Larkit\\Kernel\\": "src/"
+    }
+  }
+}
